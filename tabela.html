@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTFF-8">
-        <meta name="viewport" content="width-device-width, initial-scale=1.0">
-        <title>Tabela de Punição</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
+  <head>
+    <meta charset="UTFF-8" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>Tabela de Punição</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div>
+      <div>
         <div>
-            <div>
-                <input type="number" id="minutes" min="1">
-            </div>
-            <div>
-                <div>
-                    <div>
-                        <h2 id="nameUser"></h2>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th scope="col">Dia</th>
-                                <th scope="col">Tempo</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <td></td>
-                        </tbody>
-                    </table>
-                    <div>
-                        <div>Total</div>
-                        <div></div>
-                        <div>Puniçao</div>
-                    </div>
-                </div>
-            </div>
+          <input type="number" id="minutes" />
         </div>
-    </body>
+        <div>
+          <input type="submit" value="Enviar" />
+        </div>
+      </div>
+      <div>
+        <div>
+          <div>
+            <h2 id="nameUser"></h2>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Tempo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <td></td>
+              <td></td>
+            </tbody>
+          </table>
+          <div>
+            <div>Total</div>
+            <div></div>
+            <div>Puniçao</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
 <script src="tabela.js"></script>

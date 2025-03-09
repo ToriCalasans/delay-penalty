@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const buttonsName = document.querySelector("button");
+  const buttonsName = document.querySelectorAll("button");
   //O addEventListener permite que você configure funções a serem chamadas quando um evento específico acontece
 
   buttonsName.forEach((buttonName) => {
@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // E Aqui pegamos o texto do botão
       localStorage.setItem("name", nameUser);
       //Guarda os valores no localStorage
-      window.location.hrref = "tabela.html";
+      window.location.href = "tabela.html";
       //E aqui redirecionamos para outra páginas
     });
   });
