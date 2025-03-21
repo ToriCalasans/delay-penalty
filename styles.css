@@ -24,20 +24,20 @@ button:hover{
 }
 table{
     border-collapse:collapse;
-    display:flex;
-    justify-content:center;
+
 }
 th, td{
     border:1px solid black;
     padding:8px;
-    display:flex;
-    justify-content:center;
+
 }
 tr{
 
 }
 thead th{
     width:25%;
-    display:flex;
+}
+.organize-div{
     justify-content:center;
+    display: flex;
 }
