@@ -7,38 +7,55 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div>
-      <div>
+    <div class="tabela">
+      <div class="inputs_div">
         <div>
-          <input type="number" id="minutes" />
+          <input
+            class="input_tabela"
+            type="number"
+            id="minutes"
+            min="1"
+            placeholder="Digite os minutos de atraso"
+          />
         </div>
         <div>
-          <input type="submit" value="Enviar" />
+          <button id="adicionar">Adicionar</button>
         </div>
       </div>
       <div>
-        <div >
+        <div>
           <div>
             <h2 id="nameUser"></h2>
           </div>
           <div class="organize-div">
-          <table>
-            <thead>
-              <tr>
-                <th scope="col">Dia</th>
-                <th scope="col">Tempo</th>
-              </tr>
-            </thead>
-            <tbody>
-              <td></td>
-              <td></td>
-            </tbody>
-          </table>
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">Dia</th>
+                  <th scope="col">Tempo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <td></td>
+                <td></td>
+              </tbody>
+            </table>
           </div>
           <div>
-            <div>Total</div>
-            <div></div>
-            <div>Puniçao</div>
+            <div>
+              <p>Total de minutos: <span id="totalMinutos">0</span></p>
+            </div>
+            <div>
+              <p>Punicão: <span id="punicao"></span></p>
+            </div>
+            <div>
+              <div>
+                <button id="resetar">Resetar Tabela</button>
+              </div>
+              <div>
+                <button id="voltar">Voltar</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
