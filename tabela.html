@@ -8,8 +8,10 @@
   </head>
   <body>
     <div class="tabela">
-      <div class="inputs_div">
-        <div>
+      <div>
+        <h2 id="nameUser"></h2>
+      </div>
+      <div class="inputs_div" class="title">
           <input
             class="input_tabela"
             type="number"
@@ -17,37 +19,31 @@
             min="1"
             placeholder="Digite os minutos de atraso"
           />
-        </div>
-        <div>
           <button id="adicionar">Adicionar</button>
-        </div>
       </div>
       <div>
         <div>
-          <div>
-            <h2 id="nameUser"></h2>
-          </div>
           <div class="organize-div">
-            <table>
-              <thead>
-                <tr>
-                  <th scope="col">Dia</th>
-                  <th scope="col">Tempo</th>
-                </tr>
-              </thead>
-              <tbody>
-                <td></td>
-                <td></td>
-              </tbody>
-            </table>
-          </div>
-          <div>
             <div>
-              <p>Total de minutos: <span id="totalMinutos">0</span></p>
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">Dia</th>
+                    <th scope="col">Tempo</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <td></td>
+                  <td></td>
+                </tbody>
+              </table>
             </div>
-            <div>
+            <div class="total_punicao">
+              <p>Total de minutos: <span id="totalMinutos">0</span></p>
               <p>Punicão: <span id="punicao"></span></p>
             </div>
+          </div>
+          <div>
             <div>
               <div>
                 <button id="resetar">Resetar Tabela</button>

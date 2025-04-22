@@ -7,9 +7,6 @@ body {
     height: 100%;
     width: 100%;
 }
-div{
-    margin-top:50px;
-}
 button{
     Padding:10px 20px;
     font-size:18;
@@ -25,20 +22,43 @@ button:hover{
     background-color:#8a8a8a;
 }
 table{
-    border-collapse:collapse;
+    background-color: #f8f8f8;
+    width: 100%;
+    border-spacing: 67px 4px; 
 
 }
 th, td{
-    border:1px solid black;
-    padding:8px;
+    font-size: 20px;
+    color: #797979; 
+}
+tr{
 
 }
-thead th{
-    width:25%;
+thead{
+    color: #797979; 
+    font-size: 30px;    
+    border-bottom: 1px solid #4d4d4d;
+    border-top: 1px solid #4d4d4d;
+}
+tbody{
+
 }
 .organize-div{
     justify-content:center;
     display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    background-color:#f8f8f8;
+    border-style: solid;
+    border-width: 10px;
+    border-color:#b6b5b5;
+    border-radius:24px;
+    margin-top:2%;
+    margin-left:35%;
+    margin-right:35%;
+    padding-left: 1%;
+    padding-right: 1%;
 }
 .menu{
     background-color:#f8f8f8;
@@ -56,19 +76,28 @@ thead th{
     padding-right: 1%;
 }
 .input_tabela{
-    border-radius:20px;
-    padding-top:20px;
-    padding-left: 75%;
-    padding-right: 10%;
-    padding-bottom: 5%;
+    border-radius:10px;
+    width: 20%;
+    height: 35px;
     border:none;
+
+}
+.input_tabela::placeholder{
+padding-left: 27%;
 }
 .inputs_div{
 display: flex;
+flex-direction: row;
 align-items: center;
 justify-content:center;
 }
-.tabela{
-    background-color: #D9D9D9;
-    padding-top: 2%;
+.total_punicao{
+    margin-top: 5%;
+    font-size: 20px;
+    color: #4d4d4d;
 }
+
+/*
+    border-bottom: 1px solid #4d4d4d;
+    border-top: 1px solid #4d4d4d;
+*/

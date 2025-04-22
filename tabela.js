@@ -30,37 +30,40 @@ document.addEventListener("DOMContentLoaded", function () {
     atrasos.forEach((atraso) => (total += atraso.tempo));
     document.getElementById("totalMinutos").innerText = total;
 
-    if (total <= 0) {
+    if (total >= 0 && total < 5) {
       document.getElementById("punicao").innerHTML = "Paga nada";
-    } else if (total <= 5) {
+      console.log("entrei aqui");
+    } else if (total >= 5 && total < 10) {
       document.getElementById("punicao").innerHTML = "Paga 3 reais";
-    } else if (total <= 10) {
+      console.log("entrei aqui2");
+    } else if (total >= 10 && total < 15) {
       document.getElementById("punicao").innerHTML = "Paga 6 reais";
-    } else if (total <= 15) {
+    } else if (total >= 15 && total < 30) {
       document.getElementById("punicao").innerHTML = "Paga 9 reais";
-    } else if (total <= 30) {
+    } else if (total >= 30 && total < 60) {
       document.getElementById("punicao").innerHTML = "Paga 18 reais";
-    } else if (total <= 60) {
+    } else if (total >= 60 && total < 90) {
       document.getElementById("punicao").innerHTML = "Paga 36 reais";
-    } else if (total <= 90) {
+    } else if (total >= 90 && total < 120) {
       document.getElementById("punicao").innerHTML = "Paga 54 reais";
-    } else if (total <= 120) {
+    } else if (total >= 120 && total < 150) {
       document.getElementById("punicao").innerHTML = "Paga Lanche completo";
-    } else if (total <= 150) {
+    } else if (total >= 150 && total < 180) {
       document.getElementById("punicao").innerHTML =
         "Além do lanche paga Refri";
-    } else if (total <= 180) {
+    } else if (total >= 180 && total < 210) {
       document.getElementById("punicao").innerHTML =
         "Além do lanche e refri, paga batata";
-    } else if (total <= 210) {
+    } else if (total >= 210 && total < 240) {
       document.getElementById("punicao").innerHTML =
         "Além de lanche, refri e batata, paga sobremesa";
-    } else if (total <= 240) {
+    } else if (total >= 240 && total < 270) {
       document.getElementById("punicao").innerHTML =
         "Além de todo combo precisa pagar pra Camila.";
-    } else if (total <= 270) {
-      document.getElementById("punicao").innerHTML = "Da a bunda";
+    } else if (total >= 270) {
+      document.getElementById("punicao").innerHTML = "Muda a foto do Linkedly";
     }
+    console.log(total);
   }
   //Aqui atualizamos o total de minutos e depois nossa tabela dps de carregar.
   atualizaTabela();
